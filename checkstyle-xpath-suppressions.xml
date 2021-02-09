@@ -1,0 +1,3 @@
+<!-- https://stackoverflow.com/questions/29627108/checkstyle-errors-while-using-lombok -->
+<!-- disable checks against lombok annotations -->
+<suppress-xpath checks="HideUtilityClassConstructor" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='UtilityClass']]"/>
