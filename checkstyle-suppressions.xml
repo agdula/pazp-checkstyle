@@ -6,9 +6,7 @@
 
 <suppressions>
 
-    <!-- workaround for:  <suppress-xpath checks="MagicNumber" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='ConfigurationProperties']]"/>-->
-    <!-- Do not check for magic numbers in Configuration Class-->
-    <suppress checks="MagicNumber" files=".*Properties.java"/>
+
 
 </suppressions>
 

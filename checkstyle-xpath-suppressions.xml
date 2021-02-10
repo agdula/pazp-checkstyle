@@ -10,8 +10,10 @@
     <!-- disable checks against lombok annotations -->
     <suppress-xpath checks="HideUtilityClassConstructor" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='UtilityClass']]"/>
 
-    <!--TODO: make it work - Do not check for magic numbers in Configuration Class  does now work-->
-<!--    <suppress-xpath checks="MagicNumber" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='ConfigurationProperties']]"/>-->
+    <!-- https://stackoverflow.com/questions/61238505/lombok-checkstyle-visibilitymodifier-error -->
+    <suppress-xpath checks="VisibilityModifier" query="//*[MODIFIERS//*[@text = 'Value']]/descendant-or-self::node()"/>
+
+    <suppress-xpath checks="MagicNumber" query="//*[MODIFIERS//*[@text = 'ConfigurationProperties']]/descendant-or-self::node()"/>
 
 </suppressions>
 

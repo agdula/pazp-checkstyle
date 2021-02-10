@@ -194,7 +194,7 @@
 
         <!-- Checks for class design                         -->
         <!-- See https://checkstyle.org/config_design.html -->
-<!--        <module name="DesignForExtension"/>-->
+        <!--        <module name="DesignForExtension"/>-->
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
         <module name="InterfaceIsType"/>
@@ -203,8 +203,8 @@
         <!-- Miscellaneous other checks.                   -->
         <!-- See https://checkstyle.org/config_misc.html -->
         <module name="ArrayTypeStyle"/>
-<!--        <module name="FinalParameters"/> -->
-        <!--        <module name="TodoComment"/>--> <!-- TODO: do we want to fail on todos - i don't think so -->
+        <!--        <module name="FinalParameters"/> -->
+        <!--        <module name="TodoComment"/>-->
         <module name="UpperEll"/>
 
         <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
@@ -214,7 +214,6 @@
             <property name="optional" value="true"/>
         </module>
 
-        <!-- ... -->
     </module>
 
 </module>
