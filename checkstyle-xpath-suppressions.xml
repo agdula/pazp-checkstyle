@@ -10,8 +10,8 @@
     <!-- disable checks against lombok annotations -->
     <suppress-xpath checks="HideUtilityClassConstructor" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='UtilityClass']]"/>
 
-    <!-- Do not check for magic numbers in Configuration Class -->
-    <suppress-xpath checks="MagicNumber" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='ConfigurationProperties']]"/>
+    <!--TODO: make it work - Do not check for magic numbers in Configuration Class  does now work-->
+<!--    <suppress-xpath checks="MagicNumber" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='ConfigurationProperties']]"/>-->
 
 </suppressions>
 
